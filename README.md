@@ -1,9 +1,9 @@
 # luggage_frontpanel_block
-Creates blocks that leverage suitcase_interim's image panel styling. (Example)[http://codepen.io/biology-it/pen/XMwVzB]
+Creates blocks that leverage suitcase_interim's image panel styling. [Example]
 
 # Requirements
-- Requires (suitcase_interim version 1.0.6)[https://github.com/isubit/suitcase_interim/releases/tag/1.0.6]
-- Relies on the (bean module)[https://www.drupal.org/project/bean]
+- Requires [suitcase_interim version 1.0.6]
+- Relies on the [bean module]
 
 ## License
 
