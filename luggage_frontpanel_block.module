@@ -1,0 +1,35 @@
+<?php
+/**
+ * @file
+ * Code for the luggage_frontpanel_block feature.
+ */
+
+include_once 'luggage_frontpanel_block.features.inc';
+
+/**
+ * Implements hook_theme().
+ */
+function luggage_frontpanel_block_theme($existing, $type, $theme, $path) {
+  $themes['bean'] = array(
+    'template' => 'bean--front-block',
+    'path' => drupal_get_path('module', 'luggage_frontpanel_block') . '/templates'
+  );
+
+  return $themes;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function luggage_frontpanel_block_form_bean_form_alter(&$form, &$form_state, $form_id) {
+  if($form['#bundle'] == "front_block") {
+    // Hide default bean type field since it's confusing and editor won't change it.
+    $form['view_mode'] = array(
+      '#type' => 'hidden',
+    );
+    //Add better description to label
+    $form['label']['#description'] = t('This text will be used to name your block. Users of your site will not see this.');
+    //Add better description to title
+    $form['title']['#description'] = t('This text will be what users see on your frontpanel block. The &lt;em&gt;, &lt;strong&gt;, &lt;i&gt; and &lt;b&gt; HTML tags are allowed, all others will be filtered out.');
+  }
+}
