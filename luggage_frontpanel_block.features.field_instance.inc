@@ -14,7 +14,8 @@ function luggage_frontpanel_block_field_default_field_instances() {
   $field_instances['bean-front_block-field_front_block_image'] = array(
     'bundle' => 'front_block',
     'deleted' => 0,
-    'description' => 'This will be the image that appears on your frontpanel block. The image width will scale to the block size, so try to have images with the same dimensions.',
+    'description' => 'This will be the image that appears on your frontpanel block.
+The image width will scale to the block size, so try to have images with the same dimensions.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -30,7 +31,7 @@ function luggage_frontpanel_block_field_default_field_instances() {
     'entity_type' => 'bean',
     'field_name' => 'field_front_block_image',
     'label' => 'Image',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'alt_field' => 1,
       'default_image' => 0,
@@ -196,7 +197,8 @@ function luggage_frontpanel_block_field_default_field_instances() {
   t('Image');
   t('This is the icon that will appear before your frontpanel block\'s label. You can also choose to not have an icon.');
   t('This is your frontpanel block\'s label color. If no color is selected, label will be red.');
-  t('This will be the image that appears on your frontpanel block. The image width will scale to the block size, so try to have images with the same dimensions.');
+  t('This will be the image that appears on your frontpanel block.
+The image width will scale to the block size, so try to have images with the same dimensions.');
   t('URL');
 
   return $field_instances;
