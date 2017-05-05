@@ -32,4 +32,5 @@ function luggage_frontpanel_block_form_bean_form_alter(&$form, &$form_state, $fo
     //Add better description to title
     $form['title']['#description'] = t('This text will be what users see on your frontpanel block. The &lt;em&gt;, &lt;strong&gt;, &lt;i&gt; and &lt;b&gt; HTML tags are allowed, all others will be filtered out.');
   }
+  drupal_add_js(drupal_get_path('module', 'luggage_frontpanel_block') . '/js/luggage_frontpanel_block.js');
 }
