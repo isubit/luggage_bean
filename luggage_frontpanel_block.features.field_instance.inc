@@ -52,13 +52,16 @@ The image width will scale to the block size, so try to have images with the sam
         'insert_class' => '',
         'insert_default' => 'auto',
         'insert_styles' => array(
-          'auto' => 'auto',
+          'auto' => 0,
           'icon_link' => 0,
           'image' => 0,
           'image_announcement_full' => 0,
           'image_flexslider_full' => 0,
           'image_flexslider_thumbnail' => 0,
-          'image_large' => 'image_large',
+          'image_frontblock_short' => 'image_frontblock_short',
+          'image_frontblock_square' => 'image_frontblock_square',
+          'image_frontblock_tall' => 'image_frontblock_tall',
+          'image_large' => 0,
           'image_medium' => 0,
           'image_people_full' => 0,
           'image_people_thumb' => 0,
@@ -73,6 +76,37 @@ The image width will scale to the block size, so try to have images with the sam
       ),
       'type' => 'image_image',
       'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'bean-front_block-field_front_block_image_style'.
+  $field_instances['bean-front_block-field_front_block_image_style'] = array(
+    'bundle' => 'front_block',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Choose the image style for your front block image. This style will scale according to the width of your front block pane and the height of other items in the block\'s row.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_front_block_image_style',
+    'label' => 'Image Style',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 4,
     ),
   );
 
@@ -103,7 +137,7 @@ The image width will scale to the block size, so try to have images with the sam
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -134,7 +168,7 @@ The image width will scale to the block size, so try to have images with the sam
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -191,10 +225,12 @@ The image width will scale to the block size, so try to have images with the sam
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Choose the image style for your front block image. This style will scale according to the width of your front block pane and the height of other items in the block\'s row.');
   t('Color');
   t('Enter the URL that you want your frontpanel block to link to here.');
   t('Icon');
   t('Image');
+  t('Image Style');
   t('This is the icon that will appear before your frontpanel block\'s label. You can also choose to not have an icon.');
   t('This is your frontpanel block\'s label color. If no color is selected, label will be red.');
   t('This will be the image that appears on your frontpanel block.

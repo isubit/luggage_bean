@@ -32,6 +32,32 @@ function luggage_frontpanel_block_field_default_field_bases() {
     'type' => 'image',
   );
 
+  // Exported field_base: 'field_front_block_image_style'.
+  $field_bases['field_front_block_image_style'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_front_block_image_style',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'frontblock_square' => 'Square',
+        'frontblock_short' => 'Short',
+        'frontblock_tall' => 'Tall',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_front_block_label_color'.
   $field_bases['field_front_block_label_color'] = array(
     'active' => 1,

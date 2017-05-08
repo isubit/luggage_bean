@@ -35,10 +35,10 @@ function luggage_frontpanel_block_strongarm() {
           'weight' => '1',
         ),
         'revision' => array(
-          'weight' => '7',
+          'weight' => '8',
         ),
         'view_mode' => array(
-          'weight' => '6',
+          'weight' => '7',
         ),
       ),
       'display' => array(
