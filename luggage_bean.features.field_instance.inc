@@ -158,6 +158,37 @@ The image width will scale to the block size, so try to have images with the sam
     ),
   );
 
+ // Exported field_instance: 'bean-link_block-field_link_block_label_color'.
+  $field_instances['bean-link_block-field_link_block_style'] = array(
+    'bundle' => 'link_block',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Choose your block\'s look and feel. If no style is selected, the Red Bar style will be used.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_link_block_style',
+    'label' => 'Style',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 6,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Choose the image style for your link block image. This style will scale according to the width of your link block pane and the height of other items in the block\'s row.');

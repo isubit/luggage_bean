@@ -89,5 +89,33 @@ function luggage_bean_field_default_field_bases() {
     'type' => 'link_field',
   );
 
+  // Exported field_base: 'field_link_block_label_icon'.
+  $field_bases['field_link_block_style'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_link_block_style',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'link-block_red' => 'Red Label',
+        'link-block_blue' => ' Blue Label',
+        'link-block_green' => ' Green Label',
+        'link-block_overlay_left' => 'Overlay Left',
+        'link-block_overlay_bottom' => 'Overlay Bottom',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   return $field_bases;
 }
