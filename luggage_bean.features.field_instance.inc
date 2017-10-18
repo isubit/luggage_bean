@@ -58,9 +58,6 @@ The image width will scale to the block size, so try to have images with the sam
           'image_announcement_full' => 0,
           'image_flexslider_full' => 0,
           'image_flexslider_thumbnail' => 0,
-          'image_linkblock_short' => 'image_linkblock_short',
-          'image_linkblock_square' => 'image_linkblock_square',
-          'image_linkblock_tall' => 'image_linkblock_tall',
           'image_large' => 0,
           'image_medium' => 0,
           'image_people_full' => 0,
@@ -76,68 +73,6 @@ The image width will scale to the block size, so try to have images with the sam
       ),
       'type' => 'image_image',
       'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance: 'bean-link_block-field_link_block_image_style'.
-  $field_instances['bean-link_block-field_link_block_image_style'] = array(
-    'bundle' => 'link_block',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Choose the image style for your link block image. This style will scale according to the width of your link block pane and the height of other items in the block\'s row.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 6,
-      ),
-    ),
-    'entity_type' => 'bean',
-    'field_name' => 'field_link_block_image_style',
-    'label' => 'Image Style',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'bean-link_block-field_link_block_label_color'.
-  $field_instances['bean-link_block-field_link_block_label_color'] = array(
-    'bundle' => 'link_block',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'This is your link block\'s label color. If no color is selected, label will be red.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'bean',
-    'field_name' => 'field_link_block_label_color',
-    'label' => 'Color',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 6,
     ),
   );
 
