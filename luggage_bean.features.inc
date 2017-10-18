@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * luggage_frontpanel_block.features.inc
+ * luggage_bean.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function luggage_frontpanel_block_ctools_plugin_api($module = NULL, $api = NULL) {
+function luggage_bean_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "bean_admin_ui" && $api == "bean") {
     return array("version" => "5");
   }
@@ -19,12 +19,12 @@ function luggage_frontpanel_block_ctools_plugin_api($module = NULL, $api = NULL)
 /**
  * Implements hook_image_default_styles().
  */
-function luggage_frontpanel_block_image_default_styles() {
+function luggage_bean_image_default_styles() {
   $styles = array();
 
-  // Exported image style: frontblock_short.
-  $styles['frontblock_short'] = array(
-    'label' => 'frontblock_short',
+  // Exported image style: linkblock_short.
+  $styles['linkblock_short'] = array(
+    'label' => 'linkblock_short',
     'effects' => array(
       2 => array(
         'name' => 'image_scale_and_crop',
@@ -37,9 +37,9 @@ function luggage_frontpanel_block_image_default_styles() {
     ),
   );
 
-  // Exported image style: frontblock_square.
-  $styles['frontblock_square'] = array(
-    'label' => 'frontblock_square',
+  // Exported image style: linkblock_square.
+  $styles['linkblock_square'] = array(
+    'label' => 'linkblock_square',
     'effects' => array(
       1 => array(
         'name' => 'image_scale_and_crop',
@@ -52,9 +52,9 @@ function luggage_frontpanel_block_image_default_styles() {
     ),
   );
 
-  // Exported image style: frontblock_tall.
-  $styles['frontblock_tall'] = array(
-    'label' => 'frontblock_tall',
+  // Exported image style: linkblock_tall.
+  $styles['linkblock_tall'] = array(
+    'label' => 'linkblock_tall',
     'effects' => array(
       3 => array(
         'name' => 'image_scale_and_crop',

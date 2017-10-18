@@ -1,22 +1,22 @@
 <?php
 /**
  * @file
- * luggage_frontpanel_block.features.field_base.inc
+ * luggage_bean.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function luggage_frontpanel_block_field_default_field_bases() {
+function luggage_bean_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_front_block_image'.
-  $field_bases['field_front_block_image'] = array(
+  // Exported field_base: 'field_link_block_image'.
+  $field_bases['field_link_block_image'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_front_block_image',
+    'field_name' => 'field_link_block_image',
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -32,13 +32,13 @@ function luggage_frontpanel_block_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_front_block_image_style'.
-  $field_bases['field_front_block_image_style'] = array(
+  // Exported field_base: 'field_link_block_image_style'.
+  $field_bases['field_link_block_image_style'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_front_block_image_style',
+    'field_name' => 'field_link_block_image_style',
     'indexes' => array(
       'value' => array(
         0 => 'value',
@@ -48,9 +48,9 @@ function luggage_frontpanel_block_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'frontblock_square' => 'Square',
-        'frontblock_short' => 'Short',
-        'frontblock_tall' => 'Tall',
+        'linkblock_square' => 'Square',
+        'linkblock_short' => 'Short',
+        'linkblock_tall' => 'Tall',
       ),
       'allowed_values_function' => '',
     ),
@@ -58,13 +58,13 @@ function luggage_frontpanel_block_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_front_block_label_color'.
-  $field_bases['field_front_block_label_color'] = array(
+  // Exported field_base: 'field_link_block_label_color'.
+  $field_bases['field_link_block_label_color'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_front_block_label_color',
+    'field_name' => 'field_link_block_label_color',
     'indexes' => array(
       'value' => array(
         0 => 'value',
@@ -87,13 +87,13 @@ function luggage_frontpanel_block_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_front_block_label_icon'.
-  $field_bases['field_front_block_label_icon'] = array(
+  // Exported field_base: 'field_link_block_label_icon'.
+  $field_bases['field_link_block_label_icon'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_front_block_label_icon',
+    'field_name' => 'field_link_block_label_icon',
     'indexes' => array(
       'value' => array(
         0 => 'value',
@@ -115,13 +115,13 @@ function luggage_frontpanel_block_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_front_block_url'.
-  $field_bases['field_front_block_url'] = array(
+  // Exported field_base: 'field_link_block_url'.
+  $field_bases['field_link_block_url'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_front_block_url',
+    'field_name' => 'field_link_block_url',
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',

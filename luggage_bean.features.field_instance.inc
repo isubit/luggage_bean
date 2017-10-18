@@ -1,20 +1,20 @@
 <?php
 /**
  * @file
- * luggage_frontpanel_block.features.field_instance.inc
+ * luggage_bean.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function luggage_frontpanel_block_field_default_field_instances() {
+function luggage_bean_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'bean-front_block-field_front_block_image'.
-  $field_instances['bean-front_block-field_front_block_image'] = array(
-    'bundle' => 'front_block',
+  // Exported field_instance: 'bean-link_block-field_link_block_image'.
+  $field_instances['bean-link_block-field_link_block_image'] = array(
+    'bundle' => 'link_block',
     'deleted' => 0,
-    'description' => 'This will be the image that appears on your frontpanel block.
+    'description' => 'This will be the image that appears on your link block.
 The image width will scale to the block size, so try to have images with the same dimensions.',
     'display' => array(
       'default' => array(
@@ -29,13 +29,13 @@ The image width will scale to the block size, so try to have images with the sam
       ),
     ),
     'entity_type' => 'bean',
-    'field_name' => 'field_front_block_image',
+    'field_name' => 'field_link_block_image',
     'label' => 'Image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 1,
       'default_image' => 0,
-      'file_directory' => 'frontblock/images',
+      'file_directory' => 'linkblock/images',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
@@ -58,9 +58,9 @@ The image width will scale to the block size, so try to have images with the sam
           'image_announcement_full' => 0,
           'image_flexslider_full' => 0,
           'image_flexslider_thumbnail' => 0,
-          'image_frontblock_short' => 'image_frontblock_short',
-          'image_frontblock_square' => 'image_frontblock_square',
-          'image_frontblock_tall' => 'image_frontblock_tall',
+          'image_linkblock_short' => 'image_linkblock_short',
+          'image_linkblock_square' => 'image_linkblock_square',
+          'image_linkblock_tall' => 'image_linkblock_tall',
           'image_large' => 0,
           'image_medium' => 0,
           'image_people_full' => 0,
@@ -79,12 +79,12 @@ The image width will scale to the block size, so try to have images with the sam
     ),
   );
 
-  // Exported field_instance: 'bean-front_block-field_front_block_image_style'.
-  $field_instances['bean-front_block-field_front_block_image_style'] = array(
-    'bundle' => 'front_block',
+  // Exported field_instance: 'bean-link_block-field_link_block_image_style'.
+  $field_instances['bean-link_block-field_link_block_image_style'] = array(
+    'bundle' => 'link_block',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Choose the image style for your front block image. This style will scale according to the width of your front block pane and the height of other items in the block\'s row.',
+    'description' => 'Choose the image style for your link block image. This style will scale according to the width of your link block pane and the height of other items in the block\'s row.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -95,7 +95,7 @@ The image width will scale to the block size, so try to have images with the sam
       ),
     ),
     'entity_type' => 'bean',
-    'field_name' => 'field_front_block_image_style',
+    'field_name' => 'field_link_block_image_style',
     'label' => 'Image Style',
     'required' => 0,
     'settings' => array(
@@ -110,12 +110,12 @@ The image width will scale to the block size, so try to have images with the sam
     ),
   );
 
-  // Exported field_instance: 'bean-front_block-field_front_block_label_color'.
-  $field_instances['bean-front_block-field_front_block_label_color'] = array(
-    'bundle' => 'front_block',
+  // Exported field_instance: 'bean-link_block-field_link_block_label_color'.
+  $field_instances['bean-link_block-field_link_block_label_color'] = array(
+    'bundle' => 'link_block',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'This is your frontpanel block\'s label color. If no color is selected, label will be red.',
+    'description' => 'This is your link block\'s label color. If no color is selected, label will be red.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -126,7 +126,7 @@ The image width will scale to the block size, so try to have images with the sam
       ),
     ),
     'entity_type' => 'bean',
-    'field_name' => 'field_front_block_label_color',
+    'field_name' => 'field_link_block_label_color',
     'label' => 'Color',
     'required' => 0,
     'settings' => array(
@@ -141,12 +141,12 @@ The image width will scale to the block size, so try to have images with the sam
     ),
   );
 
-  // Exported field_instance: 'bean-front_block-field_front_block_label_icon'.
-  $field_instances['bean-front_block-field_front_block_label_icon'] = array(
-    'bundle' => 'front_block',
+  // Exported field_instance: 'bean-link_block-field_link_block_label_icon'.
+  $field_instances['bean-link_block-field_link_block_label_icon'] = array(
+    'bundle' => 'link_block',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'This is the icon that will appear before your frontpanel block\'s label. You can also choose to not have an icon.',
+    'description' => 'This is the icon that will appear before your link block\'s label. You can also choose to not have an icon.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -157,7 +157,7 @@ The image width will scale to the block size, so try to have images with the sam
       ),
     ),
     'entity_type' => 'bean',
-    'field_name' => 'field_front_block_label_icon',
+    'field_name' => 'field_link_block_label_icon',
     'label' => 'Icon',
     'required' => 0,
     'settings' => array(
@@ -172,12 +172,12 @@ The image width will scale to the block size, so try to have images with the sam
     ),
   );
 
-  // Exported field_instance: 'bean-front_block-field_front_block_url'.
-  $field_instances['bean-front_block-field_front_block_url'] = array(
-    'bundle' => 'front_block',
+  // Exported field_instance: 'bean-link_block-field_link_block_url'.
+  $field_instances['bean-link_block-field_link_block_url'] = array(
+    'bundle' => 'link_block',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the URL that you want your frontpanel block to link to here.',
+    'description' => 'Enter the URL that you want your link block to link to here.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -188,7 +188,7 @@ The image width will scale to the block size, so try to have images with the sam
       ),
     ),
     'entity_type' => 'bean',
-    'field_name' => 'field_front_block_url',
+    'field_name' => 'field_link_block_url',
     'label' => 'URL',
     'required' => 1,
     'settings' => array(
@@ -225,15 +225,15 @@ The image width will scale to the block size, so try to have images with the sam
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Choose the image style for your front block image. This style will scale according to the width of your front block pane and the height of other items in the block\'s row.');
+  t('Choose the image style for your link block image. This style will scale according to the width of your link block pane and the height of other items in the block\'s row.');
   t('Color');
-  t('Enter the URL that you want your frontpanel block to link to here.');
+  t('Enter the URL that you want your link block to link to here.');
   t('Icon');
   t('Image');
   t('Image Style');
-  t('This is the icon that will appear before your frontpanel block\'s label. You can also choose to not have an icon.');
-  t('This is your frontpanel block\'s label color. If no color is selected, label will be red.');
-  t('This will be the image that appears on your frontpanel block.
+  t('This is the icon that will appear before your link block\'s label. You can also choose to not have an icon.');
+  t('This is your link block\'s label color. If no color is selected, label will be red.');
+  t('This will be the image that appears on your link block.
 The image width will scale to the block size, so try to have images with the same dimensions.');
   t('URL');
 

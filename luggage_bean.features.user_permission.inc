@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * luggage_frontpanel_block.features.user_permission.inc
+ * luggage_bean.features.user_permission.inc
  */
 
 /**
  * Implements hook_user_default_permissions().
  */
-function luggage_frontpanel_block_user_default_permissions() {
+function luggage_bean_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'access bean overview'.
@@ -28,36 +28,36 @@ function luggage_frontpanel_block_user_default_permissions() {
     'module' => 'bean',
   );
 
-  // Exported permission: 'create any front_block bean'.
-  $permissions['create any front_block bean'] = array(
-    'name' => 'create any front_block bean',
+  // Exported permission: 'create any link_block bean'.
+  $permissions['create any link_block bean'] = array(
+    'name' => 'create any link_block bean',
     'roles' => array(
       'bean editor' => 'bean editor',
     ),
     'module' => 'bean',
   );
 
-  // Exported permission: 'delete any front_block bean'.
-  $permissions['delete any front_block bean'] = array(
-    'name' => 'delete any front_block bean',
+  // Exported permission: 'delete any link_block bean'.
+  $permissions['delete any link_block bean'] = array(
+    'name' => 'delete any link_block bean',
     'roles' => array(
       'bean editor' => 'bean editor',
     ),
     'module' => 'bean',
   );
 
-  // Exported permission: 'edit any front_block bean'.
-  $permissions['edit any front_block bean'] = array(
-    'name' => 'edit any front_block bean',
+  // Exported permission: 'edit any link_block bean'.
+  $permissions['edit any link_block bean'] = array(
+    'name' => 'edit any link_block bean',
     'roles' => array(
       'bean editor' => 'bean editor',
     ),
     'module' => 'bean',
   );
 
-  // Exported permission: 'view any front_block bean'.
-  $permissions['view any front_block bean'] = array(
-    'name' => 'view any front_block bean',
+  // Exported permission: 'view any link_block bean'.
+  $permissions['view any link_block bean'] = array(
+    'name' => 'view any link_block bean',
     'roles' => array(
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
