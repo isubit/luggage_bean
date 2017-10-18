@@ -10,7 +10,7 @@
     <?php if (isset($bean->field_link_block_label_icon['und'][0]['value'])): ?>
       <div class="link-block_label">
         <p><i class="fa <?php print $bean->field_link_block_label_icon['und'][0]['value']; ?>"></i>
-        <?php endif; print $title; ?></p>
+        <?php print $title; ?></p>
       </div>
     <?php endif; ?>
 
