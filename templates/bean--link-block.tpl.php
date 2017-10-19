@@ -1,4 +1,4 @@
-<div class"link-block <?php print $bean->field_link_block_style['und'][0]['value'] ?>" <?php print $attributes; ?>>
+<div class="link-block <?php print $bean->field_link_block_style['und'][0]['value'] ?>" <?php print $attributes; ?>>
   <a href="<?php print $bean->field_link_block_url['und'][0]['url']; ?>">
 
     <?php if (isset($bean->field_link_block_image['und'][0]['uri'])): ?>
@@ -9,8 +9,8 @@
 
     <?php if (isset($bean->field_link_block_label_icon['und'][0]['value'])): ?>
       <div class="link-block_label">
-        <p><i class="fa <?php print $bean->field_link_block_label_icon['und'][0]['value']; ?>"></i>
-        <?php print $title; ?></p>
+        <p><span class="fa <?php print $bean->field_link_block_label_icon['und'][0]['value']; ?>"></span>
+        <span><?php print $title; ?><span></p>
       </div>
     <?php endif; ?>
 
