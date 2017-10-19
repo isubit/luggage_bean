@@ -106,10 +106,13 @@ function luggage_bean_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         'link-block_red' => 'Red Label',
-        'link-block_blue' => ' Blue Label',
-        'link-block_green' => ' Green Label',
-        'link-block_overlay_left' => 'Overlay Left',
-        'link-block_overlay_bottom' => 'Overlay Bottom',
+        'link-block_blue' => 'Blue Label',
+        'link-block_green' => 'Green Label',
+        'link-block_dark-red' => 'Dark Red Label',
+        'link-block_dark-blue' => 'Dark Blue Label',
+        'link-block_dark-green' => 'Dark Green Label',
+        'link-block_dark-overlay_left' => 'Overlay Left',
+        'link-block_dark-overlay_bottom' => 'Overlay Bottom',
       ),
       'allowed_values_function' => '',
     ),
