@@ -7,12 +7,13 @@
       </div>
     <?php endif; ?>
 
-    <?php if (isset($bean->field_link_block_label_icon['und'][0]['value'])): ?>
-      <div class="link-block_label">
-        <p><span class="fa <?php print $bean->field_link_block_label_icon['und'][0]['value']; ?>"></span>
-        <span><?php print $title; ?><span></p>
-      </div>
-    <?php endif; ?>
-
+    <div class="link-block_label">
+      <p>
+        <?php if (isset($bean->field_link_block_label_icon['und'][0]['value'])): ?>
+          <span class="fa <?php print $bean->field_link_block_label_icon['und'][0]['value']; ?>"></span>
+        <?php endif; ?>
+        <span><?php print $title; ?><span>
+      </p>
+    </div>
   </a>
 </div>
