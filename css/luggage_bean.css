@@ -1,0 +1,70 @@
+/* ----------------------- */
+/* Link Block Beans
+/* ----------------------- */
+
+.link-block a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 3px;
+  overflow: hidden; 
+}
+  .link-block a:hover {
+    box-shadow: 0 0 5px 1px #7a99ac;
+  }
+
+.link-block_img img {
+  width: 100%;
+}
+
+.link-block_label {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  background: #cc0000;
+}
+
+.link-block .fa {
+  margin-right: 1rem;
+}
+
+.link-block_label p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
+/* Colors */
+.link-block_blue .link-block_label { background: #006ba6; }
+.link-block_green .link-block_label { background: #76881d; }
+.link-block_dark-red .link-block_label { background: #7c2529; }
+.link-block_dark-blue .link-block_label { background: #003D4C; }
+.link-block_dark-green .link-block_label { background: #3E4827; }
+
+/* Overlay */
+.link-block_dark-overlay_left .link-block_label,
+.link-block_dark-overlay_bottom .link-block_label {
+  position: absolute;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.link-block_dark-overlay_left .link-block_label p,
+.link-block_dark-overlay_bottom .link-block_label p {
+  justify-content: flex-start;
+}
+
+.link-block_dark-overlay_left .link-block_label {
+  left: 0; bottom: 20%;
+  max-width: 90%;
+}
+
+.link-block_dark-overlay_bottom .link-block_label {
+  left: 0; bottom: 0; right: 0;
+  width: 100%;
+}
+
+/* Kill external link icon */
+#section-content .link-block a.external:after { display: none; }
