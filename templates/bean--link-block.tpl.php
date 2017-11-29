@@ -12,7 +12,7 @@
         <?php if (isset($bean->field_link_block_label_icon['und'][0]['value'])): ?>
           <span class="fa <?php print $bean->field_link_block_label_icon['und'][0]['value']; ?>"></span>
         <?php endif; ?>
-        <span><?php print $title; ?><span>
+        <span><?php print $title; ?></span>
       </p>
     </div>
   </a>
