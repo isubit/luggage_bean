@@ -10,7 +10,7 @@ include_once 'luggage_bean.features.inc';
  * Implements hook_theme().
  */
 function luggage_bean_theme($existing, $type, $theme, $path) {
-  $themes['bean'] = array(
+  $themes['bean__link_block'] = array(
     'template' => 'bean--link-block',
     'path' => drupal_get_path('module', 'luggage_bean') . '/templates'
   );
