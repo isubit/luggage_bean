@@ -1,5 +1,5 @@
 <div class="link-block <?php print $bean->field_link_block_style['und'][0]['value'] ?>" <?php print $attributes; ?>>
-  <a href="<?php print $bean->field_link_block_url['und'][0]['url']; ?>">
+  <?php if (isset($bean->field_link_block_url['und'][0]['url'])): ?><a class="link-block_link" href="<?php print $bean->field_link_block_url['und'][0]['url']; ?>"><?php else: ?><div class="link-block_wrap"><?php endif ?>
 
     <?php if (isset($bean->field_link_block_image['und'][0]['uri'])): ?>
       <div class="link-block_img">
@@ -15,5 +15,5 @@
         <span><?php print $title; ?></span>
       </p>
     </div>
-  </a>
+    <?php if (isset($bean->field_link_block_url['und'][0]['url'])): ?></a><?php else: ?></div><?php endif ?>
 </div>

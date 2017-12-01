@@ -2,7 +2,13 @@
 /* Link Block Beans
 /* ----------------------- */
 
-.link-block a {
+.link-block_wrap {
+  border-radius: 3px;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+a.link-block_link{
   display: block;
   position: relative;
   color: #ffffff;

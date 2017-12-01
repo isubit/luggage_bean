@@ -125,7 +125,7 @@ The image width will scale to the block size, so try to have images with the sam
     'entity_type' => 'bean',
     'field_name' => 'field_link_block_url',
     'label' => 'URL',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
       'attributes' => array(
