@@ -1,0 +1,77 @@
+/* ----------------------- */
+/* Link Block Beans
+/* ----------------------- */
+
+.bean-card_wrap {
+  border-radius: 3px;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+a.bean-card_link{
+  display: block;
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 3px;
+  overflow: hidden; 
+}
+  .bean-card a:hover {
+    box-shadow: 0 0 5px 1px #7a99ac;
+  }
+
+.bean-card_img img {
+  width: 100%;
+}
+
+.bean-card_label {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  background: #cc0000;
+}
+
+.bean-card .fa {
+  margin-right: 1rem;
+}
+
+.bean-card_label p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
+/* Colors */
+.bean-card_blue .bean-card_label { background: #006ba6; }
+.bean-card_green .bean-card_label { background: #76881d; }
+.bean-card_dark-red .bean-card_label { background: #7c2529; }
+.bean-card_dark-blue .bean-card_label { background: #003D4C; }
+.bean-card_dark-green .bean-card_label { background: #3E4827; }
+
+/* Overlay */
+.bean-card_dark-overlay_left .bean-card_label,
+.bean-card_dark-overlay_bottom .bean-card_label {
+  position: absolute;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.bean-card_dark-overlay_left .bean-card_label p,
+.bean-card_dark-overlay_bottom .bean-card_label p {
+  justify-content: flex-start;
+}
+
+.bean-card_dark-overlay_left .bean-card_label {
+  left: 0; bottom: 20%;
+  max-width: 90%;
+}
+
+.bean-card_dark-overlay_bottom .bean-card_label {
+  left: 0; bottom: 0; right: 0;
+  width: 100%;
+}
+
+/* Kill external link icon */
+#section-content .bean-card a.external:after { display: none; }

@@ -1,4 +1,4 @@
-# luggage_bean
+# luggage_bean_card
 Creates blocks that leverage suitcase_interim's image panel styling. [Example]
 
 # Requirements
