@@ -1,20 +1,20 @@
 <?php
 /**
  * @file
- * luggage_bean.features.field_instance.inc
+ * luggage_bean_card.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function luggage_bean_field_default_field_instances() {
+function luggage_bean_card_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'bean-link_block-field_link_block_image'.
-  $field_instances['bean-link_block-field_link_block_image'] = array(
-    'bundle' => 'link_block',
+  // Exported field_instance: 'bean-card-field_card_image'.
+  $field_instances['bean-card-field_card_image'] = array(
+    'bundle' => 'card',
     'deleted' => 0,
-    'description' => 'This will be the image that appears on your link block.
+    'description' => 'This will be the image that appears on your card.
 The image width will scale to the block size, so try to have images with the same dimensions.',
     'display' => array(
       'default' => array(
@@ -29,13 +29,13 @@ The image width will scale to the block size, so try to have images with the sam
       ),
     ),
     'entity_type' => 'bean',
-    'field_name' => 'field_link_block_image',
+    'field_name' => 'field_card_image',
     'label' => 'Image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 1,
       'default_image' => 0,
-      'file_directory' => 'linkblock/images',
+      'file_directory' => 'card/images',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
@@ -76,12 +76,12 @@ The image width will scale to the block size, so try to have images with the sam
     ),
   );
 
-  // Exported field_instance: 'bean-link_block-field_link_block_label_icon'.
-  $field_instances['bean-link_block-field_link_block_label_icon'] = array(
-    'bundle' => 'link_block',
+  // Exported field_instance: 'bean-card-field_card_label_icon'.
+  $field_instances['bean-card-field_card_label_icon'] = array(
+    'bundle' => 'card',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'This is the icon that will appear before your link block\'s label. You can also choose to not have an icon.',
+    'description' => 'This is the icon that will appear before your card\'s label. You can also choose to not have an icon.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -92,7 +92,7 @@ The image width will scale to the block size, so try to have images with the sam
       ),
     ),
     'entity_type' => 'bean',
-    'field_name' => 'field_link_block_label_icon',
+    'field_name' => 'field_card_label_icon',
     'label' => 'Icon',
     'required' => 0,
     'settings' => array(
@@ -107,12 +107,12 @@ The image width will scale to the block size, so try to have images with the sam
     ),
   );
 
-  // Exported field_instance: 'bean-link_block-field_link_block_url'.
-  $field_instances['bean-link_block-field_link_block_url'] = array(
-    'bundle' => 'link_block',
+  // Exported field_instance: 'bean-card-field_card_url'.
+  $field_instances['bean-card-field_card_url'] = array(
+    'bundle' => 'card',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the URL that you want your link block to link to here.',
+    'description' => 'Enter the URL that you want your card to link to here.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -123,7 +123,7 @@ The image width will scale to the block size, so try to have images with the sam
       ),
     ),
     'entity_type' => 'bean',
-    'field_name' => 'field_link_block_url',
+    'field_name' => 'field_card_url',
     'label' => 'URL',
     'required' => 0,
     'settings' => array(
@@ -158,9 +158,9 @@ The image width will scale to the block size, so try to have images with the sam
     ),
   );
 
- // Exported field_instance: 'bean-link_block-field_link_block_label_color'.
-  $field_instances['bean-link_block-field_link_block_style'] = array(
-    'bundle' => 'link_block',
+ // Exported field_instance: 'bean-card-field_card_label_color'.
+  $field_instances['bean-card-field_card_style'] = array(
+    'bundle' => 'card',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Choose your block\'s look and feel. If no style is selected, the Red Bar style will be used.',
@@ -174,7 +174,7 @@ The image width will scale to the block size, so try to have images with the sam
       ),
     ),
     'entity_type' => 'bean',
-    'field_name' => 'field_link_block_style',
+    'field_name' => 'field_card_style',
     'label' => 'Style',
     'required' => 0,
     'settings' => array(
@@ -191,15 +191,15 @@ The image width will scale to the block size, so try to have images with the sam
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Choose the image style for your link block image. This style will scale according to the width of your link block pane and the height of other items in the block\'s row.');
+  t('Choose the image style for your card image. This style will scale according to the width of your card pane and the height of other items in the block\'s row.');
   t('Color');
-  t('Enter the URL that you want your link block to link to here.');
+  t('Enter the URL that you want your card to link to here.');
   t('Icon');
   t('Image');
   t('Image Style');
-  t('This is the icon that will appear before your link block\'s label. You can also choose to not have an icon.');
-  t('This is your link block\'s label color. If no color is selected, label will be red.');
-  t('This will be the image that appears on your link block.
+  t('This is the icon that will appear before your card\'s label. You can also choose to not have an icon.');
+  t('This is your card\'s label color. If no color is selected, label will be red.');
+  t('This will be the image that appears on your card.
 The image width will scale to the block size, so try to have images with the same dimensions.');
   t('URL');
 

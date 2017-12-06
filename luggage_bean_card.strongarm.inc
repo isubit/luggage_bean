@@ -1,19 +1,19 @@
 <?php
 /**
  * @file
- * luggage_bean.strongarm.inc
+ * luggage_bean_card.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function luggage_bean_strongarm() {
+function luggage_bean_card_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_bean__link_block';
+  $strongarm->name = 'field_bundle_settings_bean__card';
   $strongarm->value = array(
     'view_modes' => array(
       'default' => array(
@@ -51,7 +51,7 @@ function luggage_bean_strongarm() {
       ),
     ),
   );
-  $export['field_bundle_settings_bean__link_block'] = $strongarm;
+  $export['field_bundle_settings_bean__card'] = $strongarm;
 
   return $export;
 }

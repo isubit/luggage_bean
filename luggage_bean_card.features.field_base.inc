@@ -1,22 +1,22 @@
 <?php
 /**
  * @file
- * luggage_bean.features.field_base.inc
+ * luggage_bean_card.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function luggage_bean_field_default_field_bases() {
+function luggage_bean_card_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_link_block_image'.
-  $field_bases['field_link_block_image'] = array(
+  // Exported field_base: 'field_card_image'.
+  $field_bases['field_card_image'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_link_block_image',
+    'field_name' => 'field_card_image',
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -32,13 +32,13 @@ function luggage_bean_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_link_block_label_icon'.
-  $field_bases['field_link_block_label_icon'] = array(
+  // Exported field_base: 'field_card_label_icon'.
+  $field_bases['field_card_label_icon'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_link_block_label_icon',
+    'field_name' => 'field_card_label_icon',
     'indexes' => array(
       'value' => array(
         0 => 'value',
@@ -79,13 +79,13 @@ function luggage_bean_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_link_block_url'.
-  $field_bases['field_link_block_url'] = array(
+  // Exported field_base: 'field_card_url'.
+  $field_bases['field_card_url'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_link_block_url',
+    'field_name' => 'field_card_url',
     'indexes' => array(),
     'locked' => 0,
     'module' => 'link',
@@ -108,13 +108,13 @@ function luggage_bean_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_link_block_label_icon'.
-  $field_bases['field_link_block_style'] = array(
+  // Exported field_base: 'field_card_label_icon'.
+  $field_bases['field_card_style'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_link_block_style',
+    'field_name' => 'field_card_style',
     'indexes' => array(
       'value' => array(
         0 => 'value',
@@ -124,14 +124,14 @@ function luggage_bean_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'link-block_red' => 'Red Label',
-        'link-block_blue' => 'Blue Label',
-        'link-block_green' => 'Green Label',
-        'link-block_dark-red' => 'Dark Red Label',
-        'link-block_dark-blue' => 'Dark Blue Label',
-        'link-block_dark-green' => 'Dark Green Label',
-        'link-block_dark-overlay_left' => 'Overlay Left',
-        'link-block_dark-overlay_bottom' => 'Overlay Bottom',
+        'bean-card_red' => 'Red Label',
+        'bean-card_blue' => 'Blue Label',
+        'bean-card_green' => 'Green Label',
+        'bean-card_dark-red' => 'Dark Red Label',
+        'bean-card_dark-blue' => 'Dark Blue Label',
+        'bean-card_dark-green' => 'Dark Green Label',
+        'bean-card_dark-overlay_left' => 'Overlay Left',
+        'bean-card_dark-overlay_bottom' => 'Overlay Bottom',
       ),
       'allowed_values_function' => '',
     ),
