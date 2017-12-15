@@ -1,9 +1,14 @@
-# luggage_bean_card
-Creates blocks that leverage suitcase_interim's image panel styling. [Example]
+# luggage_bean
+Creates customizable blocks that showcase content with options including colorful text backgrounds, images, and fontawesome icons. [Example]
 
 # Requirements
 - Requires [suitcase_interim version 1.1.4]
 - Relies on the [bean module]
+
+# Installation
+- Download the [bean module]
+- Enable luggage_bean_card with drush or through the Drupal UI
+- If some fields don't appear after installation, try clearing cache or resetting the feature with `drush fr luggage_bean_card`
 
 ## License
 
@@ -11,7 +16,7 @@ Creates blocks that leverage suitcase_interim's image panel styling. [Example]
 
 **Open Source | Open Access | Open Mind**
 
-[Example]:http://codepen.io/biology-it/pen/XMwVzB
-[suitcase_interim version 1.0.6]:https://github.com/isubit/suitcase_interim/releases/tag/1.0.6
+[Example]:https://www.biology-it.iastate.edu/luggage_doc/content-cards
+[suitcase_interim version 1.1.4]:https://github.com/isubit/suitcase_interim/releases/tag/1.1.4
 [bean module]:https://www.drupal.org/project/bean
 [GPLv2]:http://www.gnu.org/licenses/gpl-2.0.html
