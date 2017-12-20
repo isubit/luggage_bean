@@ -103,6 +103,72 @@ The image width will scale to the block size, so try to have images with the sam
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'bean-card-field_card_style'.
+  $field_instances['bean-card-field_card_style'] = array(
+    'bundle' => 'card',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Choose your block\'s look and feel. If no style is selected, the Red Bar style will be used.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_card_style',
+    'label' => 'Style',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'bean-card-field_card_text_size'.
+  $field_instances['bean-card-field_card_text_size'] = array(
+    'bundle' => 'card',
+    'default_value' => array(
+      0 => array(
+        'value' => 'bean-card_text-md',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_card_text_size',
+    'label' => 'Text Size',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
       'weight' => 5,
     ),
   );
@@ -158,47 +224,15 @@ The image width will scale to the block size, so try to have images with the sam
     ),
   );
 
- // Exported field_instance: 'bean-card-field_card_label_color'.
-  $field_instances['bean-card-field_card_style'] = array(
-    'bundle' => 'card',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Choose your block\'s look and feel. If no style is selected, the Red Bar style will be used.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'bean',
-    'field_name' => 'field_card_style',
-    'label' => 'Style',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 6,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
-  t('Choose the image style for your card image. This style will scale according to the width of your card pane and the height of other items in the block\'s row.');
-  t('Color');
+  t('Choose your block\'s look and feel. If no style is selected, the Red Bar style will be used.');
   t('Enter the URL that you want your card to link to here.');
   t('Icon');
   t('Image');
-  t('Image Style');
+  t('Style');
+  t('Text Size');
   t('This is the icon that will appear before your card\'s label. You can also choose to not have an icon.');
-  t('This is your card\'s label color. If no color is selected, label will be red.');
   t('This will be the image that appears on your card.
 The image width will scale to the block size, so try to have images with the same dimensions.');
   t('URL');

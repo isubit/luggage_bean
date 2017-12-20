@@ -8,7 +8,7 @@
     <?php endif; ?>
 
     <?php if ($bean->title !== ''): ?>
-      <div class="bean-card_label">
+      <div class="bean-card_label <?php print $bean->field_card_text_size['und'][0]['value'] ?>">
         <p>
           <?php if (isset($bean->field_card_label_icon['und'][0]['value'])): ?>
             <span class="fa <?php print $bean->field_card_label_icon['und'][0]['value']; ?>"></span>

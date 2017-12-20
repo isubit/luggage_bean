@@ -40,6 +40,9 @@ function luggage_bean_card_strongarm() {
         'view_mode' => array(
           'weight' => '7',
         ),
+        'redirect' => array(
+          'weight' => '9',
+        ),
       ),
       'display' => array(
         'title' => array(
