@@ -10,6 +10,7 @@ dependencies[] = features
 dependencies[] = image
 dependencies[] = link
 dependencies[] = list
+dependencies[] = luggage_roles
 dependencies[] = options
 dependencies[] = strongarm
 features[bean_type][] = card
