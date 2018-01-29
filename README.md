@@ -1,4 +1,4 @@
-# luggage_bean
+# luggage_bean_card
 Creates customizable blocks that showcase content with options including colorful text backgrounds, images, and fontawesome icons. [Example]
 
 # Requirements
