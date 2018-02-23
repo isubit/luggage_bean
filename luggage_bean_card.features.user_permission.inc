@@ -51,6 +51,7 @@ function luggage_bean_card_user_default_permissions() {
     'name' => 'edit any card bean',
     'roles' => array(
       'bean editor' => 'bean editor',
+      'content editor' => 'content editor',
     ),
     'module' => 'bean',
   );
