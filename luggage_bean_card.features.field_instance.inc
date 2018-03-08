@@ -14,8 +14,7 @@ function luggage_bean_card_field_default_field_instances() {
   $field_instances['bean-card-field_card_image'] = array(
     'bundle' => 'card',
     'deleted' => 0,
-    'description' => 'This will be the image that appears on your card.
-The image width will scale to the block size, so try to have images with the same dimensions.',
+    'description' => 'This will be the image that appears on your card. The image width will scale to the block size, so try to have images with the same dimensions.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -158,7 +157,42 @@ The image width will scale to the block size, so try to have images with the sam
     ),
   );
 
- // Exported field_instance: 'bean-card-field_card_label_color'.
+  // Exported field_instance: 'bean-card-field_card_text_size'.
+  $field_instances['bean-card-field_card_text_size'] = array(
+    'bundle' => 'card',
+    'default_value' => array(
+      0 => array(
+        'value' => 'bean-card_text-md',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Set the font-size of your block. Default is Medium.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_card_text_size',
+    'label' => 'Text Size',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 5,
+    ),
+  );
+
+ // Exported field_instance: 'bean-card-field_card_style'.
   $field_instances['bean-card-field_card_style'] = array(
     'bundle' => 'card',
     'default_value' => NULL,
@@ -199,8 +233,7 @@ The image width will scale to the block size, so try to have images with the sam
   t('Image Style');
   t('This is the icon that will appear before your card\'s label. You can also choose to not have an icon.');
   t('This is your card\'s label color. If no color is selected, label will be red.');
-  t('This will be the image that appears on your card.
-The image width will scale to the block size, so try to have images with the same dimensions.');
+  t('This will be the image that appears on your card. The image width will scale to the block size, so try to have images with the same dimensions.');
   t('URL');
 
   return $field_instances;
