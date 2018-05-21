@@ -41,3 +41,12 @@ function luggage_bean_card_form_bean_form_alter(&$form, &$form_state, $form_id) 
 function luggage_bean_card_preprocess_html(&$vars) {
   drupal_add_css(drupal_get_path('module', 'luggage_bean_card') . '/css/luggage_bean_card.css', array('group' => 200));
 }
+
+function luggage_bean_card_menu_alter(&$items) {
+  if ($items['block/%bean_delta/edit']['title']) {
+    $items['block/%bean_delta/edit']['title'] = "Edit Card";
+  }
+  if ($items['block/%bean_delta/delete']['title']) {
+    $items['block/%bean_delta/delete']['title'] = "Delete Card";
+  }
+}
