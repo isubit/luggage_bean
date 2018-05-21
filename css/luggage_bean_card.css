@@ -8,7 +8,16 @@
   color: #ffffff;
 }
 
-a.bean-card_link{
+.bean-card {
+  display: flex;
+  justify-content: center;
+}
+
+.bean-card.bean-card_width_full {
+  display: block;
+}
+
+a.bean-card_link {
   display: block;
   position: relative;
   color: #ffffff;

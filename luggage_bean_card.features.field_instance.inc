@@ -14,7 +14,8 @@ function luggage_bean_card_field_default_field_instances() {
   $field_instances['bean-card-field_card_image'] = array(
     'bundle' => 'card',
     'deleted' => 0,
-    'description' => 'This will be the image that appears on your card. The image width will scale to the block size, so try to have images with the same dimensions.',
+    'description' => 'This will be the image that appears on your card.
+The image width will scale to the block size, so try to have images with the same dimensions.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -102,6 +103,72 @@ function luggage_bean_card_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'bean-card-field_card_style'.
+  $field_instances['bean-card-field_card_style'] = array(
+    'bundle' => 'card',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Choose your block\'s look and feel. If no style is selected, the Red Bar style will be used.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_card_style',
+    'label' => 'Style',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'bean-card-field_card_text_size'.
+  $field_instances['bean-card-field_card_text_size'] = array(
+    'bundle' => 'card',
+    'default_value' => array(
+      0 => array(
+        'value' => 'bean-card_text-md',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_card_text_size',
+    'label' => 'Text Size',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
       'weight' => 5,
     ),
   );
@@ -157,59 +224,28 @@ function luggage_bean_card_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'bean-card-field_card_text_size'.
-  $field_instances['bean-card-field_card_text_size'] = array(
+  // Exported field_instance: 'bean-card-field_card_width'.
+  $field_instances['bean-card-field_card_width'] = array(
     'bundle' => 'card',
     'default_value' => array(
       0 => array(
-        'value' => 'bean-card_text-md',
+        'value' => 1,
       ),
     ),
     'deleted' => 0,
-    'description' => 'Set the font-size of your block. Default is Medium.',
+    'description' => 'If checked, the card will grow to fill all available horizontal space. If unchecked, the card will only be as wide as its content.',
     'display' => array(
       'default' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 6,
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'bean',
-    'field_name' => 'field_card_text_size',
-    'label' => 'Text Size',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 5,
-    ),
-  );
-
- // Exported field_instance: 'bean-card-field_card_style'.
-  $field_instances['bean-card-field_card_style'] = array(
-    'bundle' => 'card',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Choose your block\'s look and feel. If no style is selected, the Red Bar style will be used.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'bean',
-    'field_name' => 'field_card_style',
-    'label' => 'Style',
+    'field_name' => 'field_card_width',
+    'label' => 'Full Width',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -217,23 +253,27 @@ function luggage_bean_card_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 6,
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 7,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Choose the image style for your card image. This style will scale according to the width of your card pane and the height of other items in the block\'s row.');
-  t('Color');
+  t('Choose your block\'s look and feel. If no style is selected, the Red Bar style will be used.');
   t('Enter the URL that you want your card to link to here.');
+  t('Full Width');
   t('Icon');
+  t('If checked, the card will grow to fill all available horizontal space. If unchecked, the card will only be as wide as its content.');
   t('Image');
-  t('Image Style');
+  t('Style');
+  t('Text Size');
   t('This is the icon that will appear before your card\'s label. You can also choose to not have an icon.');
-  t('This is your card\'s label color. If no color is selected, label will be red.');
-  t('This will be the image that appears on your card. The image width will scale to the block size, so try to have images with the same dimensions.');
+  t('This will be the image that appears on your card.
+The image width will scale to the block size, so try to have images with the same dimensions.');
   t('URL');
 
   return $field_instances;

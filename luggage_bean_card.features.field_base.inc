@@ -48,6 +48,7 @@ function luggage_bean_card_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
+        'fa-users' => 'Users',
         'fa-book ' => ' Book',
         'fa-pencil ' => ' Pencil',
         'fa-desktop' => 'Computer',
@@ -73,6 +74,63 @@ function luggage_bean_card_field_default_field_bases() {
         'fa-facebook-official' => 'Facebook',
         'fa-twitter' => 'Twitter',
         'fa-youtube' => 'YouTube',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_card_style'.
+  $field_bases['field_card_style'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_card_style',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'bean-card_red' => 'Red Label',
+        'bean-card_blue' => 'Blue Label',
+        'bean-card_green' => 'Green Label',
+        'bean-card_dark-red' => 'Dark Red Label',
+        'bean-card_dark-blue' => 'Dark Blue Label',
+        'bean-card_dark-green' => 'Dark Green Label',
+        'bean-card_dark-overlay_left' => 'Overlay Left',
+        'bean-card_dark-overlay_bottom' => 'Overlay Bottom',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_card_text_size'.
+  $field_bases['field_card_text_size'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_card_text_size',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'bean-card_text-sm' => 'Small Text',
+        'bean-card_text-md' => 'Medium Text',
+        'bean-card_text-lg' => 'Large Text',
       ),
       'allowed_values_function' => '',
     ),
@@ -109,13 +167,13 @@ function luggage_bean_card_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_card_text_size'.
-  $field_bases['field_card_text_size'] = array(
+  // Exported field_base: 'field_card_width'.
+  $field_bases['field_card_width'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_card_text_size',
+    'field_name' => 'field_card_width',
     'indexes' => array(
       'value' => array(
         0 => 'value',
@@ -125,45 +183,13 @@ function luggage_bean_card_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'bean-card_text-sm' => 'Small Text',
-        'bean-card_text-md' => 'Medium Text',
-        'bean-card_text-lg' => 'Large Text',
+        0 => 'bean-card_width_auto',
+        1 => 'bean-card_width_full',
       ),
       'allowed_values_function' => '',
     ),
     'translatable' => 0,
-    'type' => 'list_text',
-  );
-
-  // Exported field_base: 'field_card_label_icon'.
-  $field_bases['field_card_style'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_card_style',
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        'bean-card_red' => 'Red Label',
-        'bean-card_blue' => 'Blue Label',
-        'bean-card_green' => 'Green Label',
-        'bean-card_dark-red' => 'Dark Red Label',
-        'bean-card_dark-blue' => 'Dark Blue Label',
-        'bean-card_dark-green' => 'Dark Green Label',
-        'bean-card_dark-overlay_left' => 'Overlay Left',
-        'bean-card_dark-overlay_bottom' => 'Overlay Bottom',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
+    'type' => 'list_boolean',
   );
 
   return $field_bases;
