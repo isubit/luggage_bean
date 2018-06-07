@@ -4,7 +4,7 @@
     $class = 'bean-card_width_full'; 
   endif; ?>
 
-<div class="bean-card <?php print $bean->field_card_style['und'][0]['value'] ?> <?php print $class ?>" <?php print $attributes; ?>>
+<div class="bean-card <?php if (!empty($bean->field_card_style['und'][0]['value'])): print $bean->field_card_style['und'][0]['value']; endif; ?>" <?php print $attributes; ?>>
   <?php if (isset($bean->field_card_url['und'][0]['url'])): ?><a class="bean-card_link" href="<?php print $bean->field_card_url['und'][0]['url']; ?>"><?php else: ?><div class="bean-card_wrap"><?php endif ?>
 
     <?php if (isset($bean->field_card_image['und'][0]['uri'])): ?>
