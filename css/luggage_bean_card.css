@@ -2,7 +2,8 @@
 /* Link Block Beans
 /* ----------------------- */
 
-.bean-card_wrap {
+.bean-card {
+  position: relative;
   border-radius: 3px;
   overflow: hidden;
   color: #ffffff;
