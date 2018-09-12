@@ -4,7 +4,7 @@
     $class = 'bean-card_width_full'; 
   endif; ?>
 
-<div class="bean-card <?php if(isset($bean->field_card_style['und'][0]['value'])): print $bean->field_card_style['und'][0]['value']; endif; ?>" <?php print $attributes; ?>>
+<div class="bean-card <?php if(isset($bean->field_card_style['und'][0]['value'])): print $bean->field_card_style['und'][0]['value']; endif; ?> <?php print $class ?>" <?php print $attributes; ?>>
   
   <?php print render($title_suffix) ?>
 
