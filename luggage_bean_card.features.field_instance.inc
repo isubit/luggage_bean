@@ -102,7 +102,7 @@ function luggage_bean_card_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -166,7 +166,7 @@ function luggage_bean_card_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => 'Set the font-size of your block. Default is Medium.',
+    'description' => 'Set the font size of your block. Default is medium.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -192,7 +192,7 @@ function luggage_bean_card_field_default_field_instances() {
     ),
   );
 
- // Exported field_instance: 'bean-card-field_card_style'.
+  // Exported field_instance: 'bean-card-field_card_style'.
   $field_instances['bean-card-field_card_style'] = array(
     'bundle' => 'card',
     'default_value' => NULL,
@@ -220,6 +220,43 @@ function luggage_bean_card_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_select',
       'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'bean-card-field_card_width'.
+  $field_instances['bean-card-field_card_width'] = array(
+    'bundle' => 'card',
+    'default_value' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'If checked, the card will grow to fill all available horizontal space. If unchecked, the card will only be as wide as its content.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 7,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_card_width',
+    'label' => 'Full Width',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 7,
     ),
   );
 

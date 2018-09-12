@@ -3,10 +3,16 @@
 /* ----------------------- */
 
 .bean-card {
+  display: flex;
+  justify-content: center;
   position: relative;
   border-radius: 3px;
   overflow: hidden;
   color: #ffffff;
+}
+
+.bean-card.bean-card_width_full {
+  display: block;
 }
 
 a.bean-card_link{
