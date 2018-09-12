@@ -157,6 +157,8 @@ function luggage_bean_card_field_default_field_bases() {
         'bean-card_dark-red' => 'Dark Red Label',
         'bean-card_dark-blue' => 'Dark Blue Label',
         'bean-card_dark-green' => 'Dark Green Label',
+        'bean-card_brown' => 'Brown Label',
+        'bean-card_grey' => 'Grey Label',
         'bean-card_dark-overlay_left' => 'Overlay Left',
         'bean-card_dark-overlay_bottom' => 'Overlay Bottom',
       ),
