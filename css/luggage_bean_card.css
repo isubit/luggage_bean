@@ -49,6 +49,8 @@ a.bean-card_link{
 .bean-card_dark-red .bean-card_label { background: #7c2529; }
 .bean-card_dark-blue .bean-card_label { background: #003D4C; }
 .bean-card_dark-green .bean-card_label { background: #3E4827; }
+.bean-card_brown .bean-card_label { background: #8b5b29; }
+.bean-card_grey .bean-card_label { background: #707372; }
 
 /* Overlay */
 .bean-card_dark-overlay_left .bean-card_label,
