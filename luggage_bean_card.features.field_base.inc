@@ -48,6 +48,7 @@ function luggage_bean_card_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
+        'fa-users' => 'Users',
         'fa-book ' => ' Book',
         'fa-pencil ' => ' Pencil',
         'fa-desktop' => 'Computer',
@@ -135,7 +136,7 @@ function luggage_bean_card_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_card_label_icon'.
+  // Exported field_base: 'field_card_style'.
   $field_bases['field_card_style'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -166,6 +167,31 @@ function luggage_bean_card_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_card_width'.
+  $field_bases['field_card_width'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_card_width',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => 'bean-card_width_auto',
+        1 => 'bean-card_width_full',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_boolean',
   );
 
   return $field_bases;
