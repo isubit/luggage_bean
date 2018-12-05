@@ -2,15 +2,11 @@
 /* Link Block Beans
 /* ----------------------- */
 
-.bean-card_wrap {
-  border-radius: 3px;
-  overflow: hidden;
-  color: #ffffff;
-}
-
 .bean-card {
   display: flex;
   justify-content: center;
+  border-radius: 3px;
+  color: #ffffff;
 }
 
 .bean-card.bean-card_width_full {
