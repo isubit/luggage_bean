@@ -42,6 +42,10 @@ function luggage_bean_card_preprocess_html(&$vars) {
   drupal_add_css(drupal_get_path('module', 'luggage_bean_card') . '/css/luggage_bean_card.css', array('group' => 200));
 }
 
+/*
+ * Implements hook_menu_alter().
+ */
+
 function luggage_bean_card_menu_alter(&$items) {
   if ($items['block/%bean_delta/edit']['title']) {
     $items['block/%bean_delta/edit']['title'] = "Edit Card";

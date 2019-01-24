@@ -107,78 +107,12 @@ The image width will scale to the block size, so try to have images with the sam
     ),
   );
 
-  // Exported field_instance: 'bean-card-field_card_style'.
-  $field_instances['bean-card-field_card_style'] = array(
-    'bundle' => 'card',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Choose your block\'s look and feel. If no style is selected, the Red Bar style will be used.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'bean',
-    'field_name' => 'field_card_style',
-    'label' => 'Style',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance: 'bean-card-field_card_text_size'.
-  $field_instances['bean-card-field_card_text_size'] = array(
-    'bundle' => 'card',
-    'default_value' => array(
-      0 => array(
-        'value' => 'bean-card_text-md',
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 6,
-      ),
-    ),
-    'entity_type' => 'bean',
-    'field_name' => 'field_card_text_size',
-    'label' => 'Text Size',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 5,
-    ),
-  );
-
   // Exported field_instance: 'bean-card-field_card_url'.
   $field_instances['bean-card-field_card_url'] = array(
     'bundle' => 'card',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the URL that you want your card to link to here.',
+    'description' => 'Enter the URL that you want your card to link to.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -233,7 +167,75 @@ The image width will scale to the block size, so try to have images with the sam
       ),
     ),
     'deleted' => 0,
-    'description' => 'If checked, the card will grow to fill all available horizontal space. If unchecked, the card will only be as wide as its content.',
+    'description' => 'Set the font size of your block. Default is medium.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_card_text_size',
+    'label' => 'Text Size',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'bean-card-field_card_style'.
+  $field_instances['bean-card-field_card_style'] = array(
+    'bundle' => 'card',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Choose your block\'s look and feel. Default is Red Label.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_card_style',
+    'label' => 'Style',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'bean-card-field_card_width'.
+  $field_instances['bean-card-field_card_width'] = array(
+    'bundle' => 'card',
+    'default_value' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'If checked, the card will grow to fill all available horizontal space. If unchecked, the card will only be as wide as its content. Full Width is recommended for Overlay styles.',
     'display' => array(
       'default' => array(
         'label' => 'above',
