@@ -35,10 +35,13 @@ function luggage_bean_card_strongarm() {
           'weight' => '1',
         ),
         'revision' => array(
-          'weight' => '8',
+          'weight' => '9',
         ),
         'view_mode' => array(
-          'weight' => '7',
+          'weight' => '8',
+        ),
+        'redirect' => array(
+          'weight' => '10',
         ),
       ),
       'display' => array(

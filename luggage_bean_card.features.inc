@@ -15,4 +15,3 @@ function luggage_bean_card_ctools_plugin_api($module = NULL, $api = NULL) {
     return array("version" => "1");
   }
 }
-

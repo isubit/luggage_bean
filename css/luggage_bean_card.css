@@ -3,11 +3,10 @@
 /* ----------------------- */
 
 .bean-card {
+  position: relative;
   display: flex;
   justify-content: center;
-  position: relative;
   border-radius: 3px;
-  overflow: hidden;
   color: #ffffff;
 }
 
@@ -15,7 +14,7 @@
   display: block;
 }
 
-a.bean-card_link{
+a.bean-card_link {
   display: block;
   position: relative;
   color: #ffffff;
@@ -60,6 +59,13 @@ a.bean-card_link{
 .bean-card_grey .bean-card_label { background: #707372; }
 
 /* Overlay */
+/* Overlay needs a minimum height in case there is no image. */
+.bean-card.bean-card_dark-overlay_left,
+.bean-card.bean-card_dark-overlay_bottom {
+  min-height: 100px;
+  background: #efefef;
+}
+
 .bean-card_dark-overlay_left .bean-card_label,
 .bean-card_dark-overlay_bottom .bean-card_label {
   position: absolute;
